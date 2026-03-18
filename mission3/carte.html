@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Visite Numérique</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            display: flex;
+            flex-direction: column; /* Ajouté pour empiler les éléments */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .carte {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            border: 2px solid #3498db; /* Bordure de la carte */
+            transition: transform 0.3s ease; /* Animation au survol */
+            transform: translateY(20px);
+            animation: fadeIn 0.8s forwards; /* Animation d'entrée */
+        }
+
+        .carte:hover {
+            transform: scale(1.05); /* Effet de zoom au survol */
+        }
+
+        h1 {
+            margin: 0;
+            color: #3498db; /* Couleur du titre */
+            animation: slideIn 0.5s forwards; /* Animation d'entrée */
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: #555; /* Couleur du sous-titre */
+            animation: slideIn 0.6s forwards; /* Animation d'entrée */
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        p {
+            color: #777; /* Couleur de la description */
+            line-height: 1.5;
+            animation: slideIn 0.7s forwards; /* Animation d'entrée */
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reseaux-sociaux {
+            margin-top: 20px;
+        }
+
+        .reseaux-sociaux a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3498db; /* Couleur des liens */
+            transition: color 0.3s ease; /* Animation de couleur */
+        }
+
+        .reseaux-sociaux a:hover {
+            color: #2980b9; /* Couleur au survol */
+        }
+
+        /* Styles pour les icônes de réseaux sociaux */
+        .icone {
+            font-size: 24px;
+        }
+
+        li {
+            text-decoration:none;
+            color: #fff;
+            background-color: #d07937;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1.3em;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            display: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Effet de survol avec élévation et changement de couleur */
+        li:hover {
+            background-color: #26518269;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .carte {
+                padding: 15px;
+                max-width: 90%; /* Largeur maximale sur petits écrans */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Réduction de la taille du titre */
+            }
+
+            h2 {
+                font-size: 1.2em; /* Réduction de la taille du sous-titre */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carte">
+        <h1>Nirojan Rupert-Diknes</h1>
+        <h2>Développeur Web</h2>
+        <p>Passionné par le développement web, j'aime créer des solutions innovantes pour améliorer l'expérience utilisateur comme HTML et CSS. Je suis toujours à la recherche de nouveaux défis et opportunités.</p>
+        
+        <div class="reseaux-sociaux">
+            <a href="https://www.linkedin.com/in/nirojan-rupert/" target="_blank" class="icone">LinkedIn</a>
+            <a href="https://github.com/JustNiro" target="_blank" class="icone">GitHub</a>
+        </div>
+    </div>
+   <ul>
+    <li><a href="../mission3/Page d'accueil de l'évènement.html">Retour au Page d'Accueil</a></li>
+   </ul>
+
+</body>
+</html>

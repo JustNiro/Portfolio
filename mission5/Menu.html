@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navigation</title>
+    <style>
+        body {
+    background-image: linear-gradient(90deg, #000000, #ffcc00);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #444;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item a:hover {
+    background-color: #555;
+}
+
+.nav-item2 {
+    position: relative;
+}
+
+.nav-item2 a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item2 a:hover {
+    background-color: #555;
+}
+
+.nav-item3 {
+    position: relative;
+}
+
+.nav-item3 a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item3 a:hover {
+    background-color: #555;
+}
+
+.nav-item4 {
+    position: relative;
+}
+
+.nav-item4 a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item4 a:hover {
+    background-color: #555;
+}
+
+.nav-item5 {
+    position: relative;
+}
+
+.nav-item5 a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item5 a:hover {
+    background-color: #555;
+}
+
+.nav-item6 {
+    position: relative;
+}
+
+.nav-item6 a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item6 a:hover {
+    background-color: #555;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #953b1d;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #2963a7;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(10px);
+}
+
+.dropdown-content2 li a {
+    padding: 10px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #915d15;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(10px);
+}
+
+.dropdown-content3 li a {
+    padding: 10px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: #decb24;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(10px);
+}
+
+.dropdown-content4 li a {
+    padding: 10px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content5{
+    display: none;
+    position: absolute;
+    background-color: #6222b1;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(10px);
+}
+
+.dropdown-content5 li a {
+    padding: 10px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content6 {
+    display: none;
+    position: absolute;
+    background-color: #20b32c;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(10px);
+}
+
+.dropdown-content6 li a {
+    padding: 10px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #9cb84c;
+}
+.dropdown-content2 li a:hover {
+    background-color: #e81919;
+}
+.dropdown-content3 li a:hover {
+    background-color: #292fa7;
+}
+.dropdown-content4 li a:hover {
+    background-color: #e1f53d;
+}
+.dropdown-content5 li a:hover {
+    background-color: #f53df3;
+}
+.dropdown-content6 li a:hover {
+    background-color: #3d91f5;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown5:hover .dropdown-content5 {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown6:hover .dropdown-content6 {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu{
+    background-color: #51b84c; 
+    color: #000; 
+    transition: background-color 0.3s ease;
+}
+
+.menu2{
+    background-color: #b8544c;
+    color: #000; 
+    transition: background-color 0.3s ease;
+}
+
+.menu3{
+    background-color: #4ca6b8; 
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.menu4{
+    background-color: #ad8e3c; 
+    color: #000; 
+    transition: background-color 0.3s ease;
+}
+
+.menu5{
+    background-color: #9f3cad; 
+    color: #000; 
+    transition: background-color 0.3s ease;
+}
+
+.menu6{
+    background-color: #3c4bad; 
+    color: #000; 
+    transition: background-color 0.3s ease;
+}
+
+header{
+    text-align: center;
+    background: linear-gradient(90deg, #000000, #4d9ea0);
+    color: #fff;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #000000, #4d9ea0);
+}
+
+header hr {
+    width: 50%;
+    color: #000;
+}
+
+header label {
+    display: none;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+.title {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #000000, #4d9ea0);
+    background-size: cover;
+    background-position: 10%;
+    color: white;
+    height: 100%;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+@media screen and (max-width : 680px) {
+    header label {
+        display: block;
+        color: #fff;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0;
+    }
+    .navbar {
+        display: none;
+    }
+
+ header input[type="checkbox"]:checked + .navbar{
+    display: block;
+ }
+
+.navbar > ul {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.navbar li {
+    padding: 0%;
+    width: 100%;
+    margin-right: 0;
+}
+
+.navbar a {
+display: block;
+padding: 15px;
+text-align: center;
+}
+
+.navbar li ul {
+position: static;
+width: 100%;
+}
+
+.navbar li ul a {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+ }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Portfolio de Nirojan</h1>
+        <label for="menu"> Menu </label>
+        <input type="checkbox" id="menu">
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item dropdown"><a href="#">HTML & CSS</a>
+                <ul class="dropdown-content">
+                    <small class="menu"><a href="../tp1/btssio.html">TP 1</a></small>
+                    <small class="menu"><a href="../tp2/accueil.html">TP 2</a></small>
+                    <small class="menu"><a href="../tp3/tableau.html">TP 3</a></small>
+                    <small class="menu"><a href="../tp4/tp4.html">TP 4</a></small>
+                </ul></li>
+            <li class="nav-item2 dropdown2"><a href="#">JavaScript</a>
+                <ul class="dropdown-content2">
+                    <small class="menu2"><a href="../tp_js1/Accueil.html">TP 1</a></small>
+                    <small class="menu2"><a href="../tp_js2/calculatrice.html">TP 2</a></small>
+                    <small class="menu2"><a href="../tp_js exercice/facture.html">TP 3</a></small>
+                    <small class="menu2"><a href="../tp_js4/tpjs4.html">TP 4</a></small>
+                    <small class="menu2"><a href="#">TP 5</a></small>
+                    <small class="menu2"><a href="#">TP 6</a></small>
+                </ul>
+            </li>
+            <li class="nav-item3 dropdown3"><a href="#">Bases de données</a>
+                <ul class="dropdown-content3">
+                    <small class="menu3"><a href="#">TP 1</a></small>
+                    <small class="menu3"><a href="#">TP 2</a></small>
+                    <small class="menu3"><a href="#">TP 3</a></small>
+                    <small class="menu3"><a href="#">TP 4</a></small>
+                    <small class="menu3"><a href="#">TP 5</a></small>
+                </ul>
+            </li>
+            <li class="nav-item4 dropdown4"><a href="#">PHP</a>
+                <ul class="dropdown-content4">
+                    <small class="menu4"><a href="#">TP 1</a></small>
+                    <small class="menu4"><a href="#">TP 2</a></small>
+                    <small class="menu4"><a href="#">TP 3</a></small>
+                    <small class="menu4"><a href="#">TP 4</a></small>
+                    <small class="menu4"><a href="#">TP 5</a></small>
+                </ul>
+            </li>
+            <li class="nav-item5 dropdown5"><a href="#">Missions</a>
+                <ul class="dropdown-content5">
+                    <small class="menu5"><a href="../mission1/métier.html">Mission 1</a></small>
+                    <small class="menu5"><a href="../mission2/Mission2.html">Mission 2</a></small>
+                    <small class="menu5"><a href="../mission3/évènement.html">Mission 3</a></small>
+                    <small class="menu5"><a href="../mission4/Page D'accueil.html">Mission 4</a></small>
+                    <small class="menu5"><a href="../mission6/Mission 6.pdf" target="_blank">Mission 6</a></small>
+                    <small class="menu5"><a href="../mission8/banque.html">Mission 8</a></small>
+                    <small class="menu5"><a href="../mission9/qcm.html">Mission 9</a></small>
+                    <small class="menu5"><a href="../mission10/tableau.html">Mission 10</a></small>
+                </ul>
+            </li>
+            <li class="nav-item6 dropdown6"><a href="#">Certification</a>
+                <ul class="dropdown-content6">
+                    <small class="menu6"><a href="../certifications/Certificat 1.pdf" target="_blank">Certification 1</a></small>
+                    <small class="menu6"><a href="../certifications/Certificat 2.pdf" target="_blank">Certification 2</a></small>
+                    <small class="menu6"><a href="../certifications/Certificat 3.pdf" target="_blank">Certification 3</a></small>
+                    <small class="menu6"><a href="../certifications/Certificat 4.pdf" target="_blank">Certification 4</a></small>
+                    <small class="menu6"><a href="../certifications/Certificat 5.pdf" target="_blank">Certification 5</a></small>
+                    <small class="menu6"><a href="../certifications/Certificat Sur SecNumAcadémie.pdf" target="_blank">Certification 6</a></small>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

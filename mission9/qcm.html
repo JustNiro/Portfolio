@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM sur HTML et CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .qcm-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .wrong {
+            color: red;
+            font-weight: bold;
+        }
+
+        .animated-button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 5px; /* Ajout d'espacement autour des boutons */
+        }
+
+        .animated-button:hover {
+            background-color: #2980b9; /* Couleur d'arrière-plan lors du survol */
+            transform: scale(1.1); /* Effet de zoom au survol */
+        }
+    </style>
+</head>
+<body>
+    <h1>QCM sur HTML et CSS</h1>
+    <div class="qcm-container">
+        <div class="question">
+            <h3>Question 1 :</h3>
+            <p>Le rôle du HTML est de... </p>
+            <ul class="options">
+                <li><input type="radio" name="q1" value="wrong"> <label>Mettre en forme du texte</label></li>
+                <li><input type="radio" name="q1" value="correct"> <label>Ordonner du contenu</label></li>
+                <li><input type="radio" name="q1" value="wrong"> <label>Créer des sites e-commerce</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 2 :</h3>
+            <p>Pour définir un titre DANS une page HTML, on utilise...</p>
+            <ul class="options">
+                <li><input type="radio" name="q2" value="wrong"> <label>L'élément title</label></li>
+                <li><input type="radio" name="q2" value="wrong"> <label>L'élément head</label></li>
+                <li><input type="radio" name="q2" value="correct"> <label>Un élément h1, h2, ... h6</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 3 :</h3>
+            <p>Lorsque vous utilisez l'élément a, vous devez obligatoirement préciser...</p>
+            <ul class="options">
+                <li><input type="radio" name="q3" value="wrong"> <label>Un attribut target</label></li>
+                <li><input type="radio" name="q3" value="correct"> <label>Un attribut href</label></li>
+                <li><input type="radio" name="q3" value="wrong"> <label>Deux attributs href et target</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 4 :</h3>
+            <p>Pour indiquer qu'un contenu est très important, on utilise l'élément... </p>
+            <ul class="options">
+                <li><input type="radio" name="q4" value="correct"> <label>Strong</label></li>
+                <li><input type="radio" name="q4" value="wrong"> <label>Em</label></li>
+                <li><input type="radio" name="q4" value="wrong"> <label>Mark</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 5 :</h3>
+            <p>A quoi sert la pseudo classe :hover ?</p>
+            <ul class="options">
+                <li><input type="radio" name="q5" value="correct"> <label>A modifier le style d'un élément lors du survol de la souris sur l'élément</label></li>
+                <li><input type="radio" name="q5" value="wrong"> <label>A modifier le style d'un lien dès qu'il a été cliqué</label></li>
+                <li><input type="radio" name="q5" value="wrong"> <label>A modifier le style d'un élément avant qu'on l'ait cliqué</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 6 :</h3>
+            <p>Laquelle de ces propositions est exacte ? </p>
+            <ul class="options">
+                <li><input type="radio" name="q6" value="correct"> <label>On doit donner une valeur unique à un attribut id mais pas à des attributs class</label></li>
+                <li><input type="radio" name="q6" value="wrong"> <label>On doit donner une valeur unique à un attribut class mais pas à des attributs id</label></li>
+                <li><input type="radio" name="q6" value="wrong"> <label>On doit donner une valeur unique à chaque attribut class et id dans une page</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 7 :</h3>
+            <p>Quelle est la différence majeure entre les éléments div et span  ?</p>
+            <ul class="options">
+                <li><input type="radio" name="q7" value="wrong"> <label>L'élement span est de type block, l'élément div est de type incline</label></li>
+                <li><input type="radio" name="q7" value="correct"> <label>L'élement div est de type block, l'élément span est de type incline</label></li>
+                <li><input type="radio" name="q7" value="wrong"> <label>L'élement div sert de conteneur, au contraire de l'élément span</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 8 :</h3>
+            <p>Un élément de type block... </p>
+            <ul class="options">
+                <li><input type="radio" name="q8" value="wrong"> <label>Occupe toute la largeur disponible dans la page</label></li>
+                <li><input type="radio" name="q8" value="wrong"> <label>N'occupe que la largeur nécessaire à son contenu</label></li>
+                <li><input type="radio" name="q8" value="correct"> <label>Occupe toute la largeur disponible dans son élément parent</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 9 :</h3>
+            <p>Les trois premièress valeurs de text-shadow servent à indiquer, dans l'ordre...</p>
+            <ul class="options">
+                <li><input type="radio" name="q9" value="correct"> <label>La projection horizontale de l'ombre, la projection verticale de l'ombre et le rayon de propagation de l'ombre</label></li>
+                <li><input type="radio" name="q9" value="wrong"> <label>La projection verticale de l'ombre, la projection horizontale de l'ombre et le rayon de propagation de l'ombre</label></li>
+                <li><input type="radio" name="q9" value="wrong"> <label>La projection horizontale de l'ombre, La projection verticale de l'ombre et la couleur de l'ombre</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>Question 10 :</h3>
+            <p>A quoi sert la propriété font-weight</p>
+            <ul class="options">
+                <li><input type="radio" name="q10" value="correct"> <label>A modifier le poids d'une police</label></li>
+                <li><input type="radio" name="q10" value="wrong"> <label>A modifier l'inclinaison d'une police</label></li>
+                <li><input type="radio" name="q10" value="wrong"> <label>A modifier la taille d'une police</label></li>
+            </ul>
+        </div>
+
+        <!-- Ajoutez toutes les questions ici comme dans le modèle ci-dessus -->
+
+        <!-- Boutons -->
+        <button onclick="correction()">Correction</button>
+        <button onclick="corrige()">Corrigé</button>
+        <button onclick="effacer()">Effacer</button>
+        <p id="result" style="margin-top: 20px;"></p>
+    </div>
+
+    <script src="test.js"></script>
+
+    <a href="../sommaire.html">
+        <button class="animated-button"> Retour aux Missions</button>
+    </a>
+</body>
+</html>

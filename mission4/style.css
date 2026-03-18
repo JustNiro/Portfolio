@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('image 4/photofunky.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-image: green;
+}
+
+.animated-button {
+    background-color: #6a9947;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px; /* Ajout d'espacement autour des boutons */
+}
+
+.animated-button:hover {
+    background-color: #994747; /* Couleur d'arrière-plan lors du survol */
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
