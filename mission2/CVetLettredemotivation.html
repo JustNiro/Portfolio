@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours Professionnel : CV et Lettre de Motivation</title>
+    <style>
+        body {
+            background-color: #B8B44E; /* Couleur de fond */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            animation: slideIn 1s ease forwards, bounce 0.5s ease forwards, colorChange 3s infinite;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation-delay: 0.5s;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes colorChange {
+            0% { color: #FFFFFF; }
+            50% { color: #FFCC00; }
+            100% { color: #FFFFFF; }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* Centrer le texte des liens */
+        }
+
+        ul li {
+            margin: 15px 0;
+            opacity: 0;
+            animation: fadeInLink 0.5s ease forwards; /* Animation des liens */
+            font-size: 1.2em; /* Augmente la taille des liens */
+        }
+
+        @keyframes fadeInLink {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ul li:nth-child(1) { animation-delay: 0.6s; } /* Délai pour le premier lien */
+        ul li:nth-child(2) { animation-delay: 0.8s; } /* Délai pour le deuxième lien */
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: #333;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block; /* Pour permettre le scaling */
+            animation: pulse 1s infinite; /* Animation de pulsation */
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        a:hover {
+            background-color: #ff6600;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mon Parcours Professionnel : CV et Lettre de Motivation</h1>
+    <ul>
+        <li><a href="Images3/Copie de Nirojan RUPERT.pdf (1).png" target="_blank">Télécharger Mon CV</a></li>
+        <li><a href="Images3/Lettre de Motivation stage.pdf" target="_blank">Télécharger Ma Lettre de Motivation</a></li>
+    </ul>
+    
+</body>
+</html>

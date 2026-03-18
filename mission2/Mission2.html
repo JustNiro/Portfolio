@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 2 - Portail d'informations</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <style>
+/* Style de base pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Dégradé orange vers rose */
+    color: #333;
+    overflow-x: hidden;
+    animation: fadeInBody 2s ease-in-out forwards;
+}
+
+@keyframes fadeInBody {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Lien de retour au sommaire avec effet de hover et transition */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+/* Titre principal avec animation d'apparition */
+.animated-title {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #000000, #ffcc00);
+    color: white;
+    animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeInText 2s ease-out forwards;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Container avec animation */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    animation: fadeInContainer 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeInContainer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Iframes avec effets de survol et parallaxe */
+.menu-frame, .content-frame {
+    border: 1px solid #ccc;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform; /* Optimise les animations */
+}
+
+.menu-frame {
+    width: 35%;
+    height: 800px;
+    transform: translateY(0);
+    animation: parallaxMenu 10s ease-in-out infinite;
+}
+
+.content-frame {
+    width: 60%;
+    height: 800px;
+    transform: translateY(0);
+    animation: parallaxContent 10s ease-in-out infinite;
+}
+
+/* Animation de parallaxe pour les iframes */
+@keyframes parallaxMenu {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes parallaxContent {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Effet zoom et ombre au survol des iframes */
+.menu-frame:hover, .content-frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    .menu-frame, .content-frame {
+        width: 100%;
+        height: 400px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Lien de retour au sommaire avec animation -->
+    <nav>
+        <ul>
+            <li><a href="../sommaire.html">Retour aux Missions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Titre principal avec animation d'apparition -->
+    <header>
+        <h1 class="animated-title">Bienvenue sur le Portail d'informations</h1>
+        <p class="intro-text">Cliquez sur les liens à gauche pour naviguer les sections d'orientation</p>
+    </header>
+
+    <!-- Contenu principal avec des iframes animées -->
+    <div class="container">
+        <!-- Iframe du menu -->
+        <iframe src="Page D'accueil.html" class="menu-frame" name="menu" title="Menu de navigation"></iframe>
+        
+        <!-- Iframe du contenu avec parallaxe -->
+        <iframe src="Images3/Computer.gif" class="content-frame" name="content" frameBorder="0" allowFullScreen title="Contenu principal"></iframe>
+    </div>
+</body>
+</html>

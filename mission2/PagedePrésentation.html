@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page personnelle de Rupert-Diknes Nirojan, étudiant en BTS SIO, passionné de technologies et de projets innovants.">
+    <meta name="keywords" content="Rupert-Diknes Nirojan, BTS SIO, Informatique, Jeux vidéo, Compétences HTML, Python, SQL">
+    <meta name="author" content="Rupert-Diknes Nirojan">
+    <title>Rupert-Diknes Nirojan - Étudiant en BTS SIO</title>
+    <style>
+        body {
+            background-color: #4EABB8;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            animation: slideDown 0.5s ease forwards;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation-delay: 0.3s;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+            animation-delay: 0.6s;
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite; /* Animation de rebond */
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .presentation p {
+            max-width: 600px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+            animation: fadeInText 0.5s ease forwards;
+            opacity: 0;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            animation: fadeInSection 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section h2 {
+            color: #4EABB8;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            animation: fadeInList 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInList {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ul li:nth-child(1) { animation-delay: 1.0s; } /* Délai pour le premier lien */
+        ul li:nth-child(2) { animation-delay: 1.2s; } /* Délai pour le deuxième lien */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rupert-Diknes Nirojan</h1>
+    </header>
+
+    <main class="presentation">
+        <img src="Images3/BlackGokuRoseHD_FondEcran.jpg" alt="Photo de Rupert-Diknes Nirojan">
+        <p>Je suis un étudiant en BTS SIO (Services Informatiques aux Organisations). J'adore apprendre de nouvelles technologies et travailler sur des projets innovants. Dans mon temps libre, je joue aux jeux vidéo et je fais du sport (volley et musculation).</p>
+    </main>
+
+    <section class="interests">
+        <h2>Mes centres d'intérêts</h2>
+        <ul>
+            <li>Jeux vidéo, Animé</li>
+            <li>Sport, Informatique</li>
+        </ul>
+    </section>
+
+    <section class="competences">
+        <h2>Mes compétences</h2>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>Python, SQL</li>
+        </ul>
+    </section>
+</body>
+</html>

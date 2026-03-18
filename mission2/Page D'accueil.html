@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background-color: #AD8141; /* Couleur de fond */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommaire</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #AD8141, #F1B07C);
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Animation d'apparition pour le titre */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #FFFFFF;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.5s; /* Délai avant l'animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Style du menu de navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+            animation-delay: calc(0.5s + var(--i)); /* Délai pour chaque lien */
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Liens de navigation */
+        nav ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: #333;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Effet au survol des liens */
+        nav ul li a:hover {
+            background-color: #ff6600;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Sommaire</h1>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li style="--i: 0s"><a href="Emplacementdulycée.html" target="content">Localisation du Lycée</a></li>
+            <li style="--i: 0.2s"><a href="BTSSIO.html" target="content">Vidéo de BTS SIO</a></li>
+            <li style="--i: 0.4s"><a href="https://lyc-vilgenis-massy.ac-versailles.fr/" target="_blank">Site du Lycée</a></li>
+            <li style="--i: 0.6s"><a href="Tableau D'Orientation.html" target="content">Tableau d'Orientation</a></li>
+            <li style="--i: 0.8s"><a href="PagedePrésentation.html" target="content">Page de Présentation</a></li>
+            <li style="--i: 1s"><a href="CVetLettredemotivation.html" target="content">CV et Lettre de Motivation</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
