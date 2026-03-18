@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2682A2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    color: black;
+}
+
+form{
+
+    background-color: teal;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.animated-button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 5px; /* Ajout d'espacement autour des boutons */
+        }
+
+        .animated-button:hover {
+            background-color: #46a049; /* Couleur d'arrière-plan lors du survol */
+            transform: scale(1.1); /* Effet de zoom au survol */
+        }
+
+input[type="text"], input[type="email"], textarea{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 5px solid pink;
+    border-radius: 3px;
+}
+
+input[type=submit]{
+    background-color: aqua;
+    color: cadetblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover{
+    background-color: darkgreen;
+}
+    </style>
+</head>
+<body>
+
+    <h1> Formulaire d'inscription </h1>
+
+    <form action="#" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name"> Prenom: </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-example">
+            <label for="name"> Nom: </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-example">
+            <label for="date"> Date de naissance: </label>
+            <input type="date" name="date" id="date" required />
+        </div>
+        <div class="form-example">
+            <label for="textarea"> Adresse Postale: </label>
+            <input type="textarea" name="textarea" id="textarea" required />
+        </div>
+        <div class="form-example">
+            <label for="textarea"> Classe: </label>
+            <select name="choice">
+                <option value="First"> BTS 1 </option>
+                <option value="Second"> BTS 2 </option>
+                <option value="Third"> Licence </option>
+            </select>
+        </div>
+        <div class="form-example">
+            <label for="password"> Mot de passe: </label>
+            <input type="password" name="Password" id="Password" required />
+        </div>
+    
+        <div class="form-example">
+            <label for="message"> Message: </label>
+            <textarea id="message" name="message" rows="4"  required></textarea>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Valider" />
+        </div>
+        <br>
+        <div class="form-example">
+            <input type="submit" value="Annuler" />
+        </div>
+    </form>
+    <a href="../sommaire1.html">
+        <button class="animated-button"> Retour aux TPs</button>
+    </a>
+</body>
+</html>

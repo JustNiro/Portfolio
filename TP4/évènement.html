@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à notre évènement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 5px; /* Ajout d'espacement autour des boutons */
+        }
+
+        .animated-button:hover {
+            background-color: #46a049; /* Couleur d'arrière-plan lors du survol */
+            transform: scale(1.1); /* Effet de zoom au survol */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Bienvenue à notre évènement</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="fade-in">À Propos de l'Évènement</h2>
+            <p class="fade-in">Rejoignez-nous pour un évènement inoubliable rempli d'activités.</p>
+        </section>
+
+        <nav>
+            <h2 class="fade-in">Liens Utiles</h2>
+
+            <a href="formulaire.html">
+                <button class="animated-button">Formulaire</button>
+            </a>
+            <br>
+            <br>
+            <a href="carte.html">
+                <button class="animated-button">Voir la Carte de Visite</button>
+            </a>
+            <br>
+            <br>
+            <a href="../sommaire.html">
+                <button class="animated-button"> Retour aux Missions</button>
+            </a>
+        </nav>
+    </main>
+
+</body>
+</html>

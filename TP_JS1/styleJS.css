@@ -1,0 +1,22 @@
+body{
+    background-color: #bea438;
+}
+
+button{
+    border-radius: 25px;
+    width: 250px;
+    height: 200px;
+    background-color: #3d7574;
+    border: 2px solid #38be73;
+    font-size: 2em;
+    color: #38be73;
+    margin: 30px;
+    transition: 0.2s;
+}
+
+button:hover{
+    color: #3d7574;
+    background-color: #38be73;
+    border: 2px solid #3d7574;
+    transition: 150ms;
+}

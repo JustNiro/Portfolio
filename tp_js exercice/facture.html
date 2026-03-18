@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture en JavaScript</title>
+    <script src="fac.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2cb2b0;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #1a6cad;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #2eaebd;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Facture en JavaScript</h1>
+    <table>
+        <tr>
+            <th>Article :</th>
+            <th>Prix Unitaire :</th>
+            <th>Quantité :</th>
+            <th>Résultat :</th>
+        </tr>
+        <tr>
+            <td><input placeholder="Nom" type="text"></td>
+            <td><input type="number" id="price1" value=""></td>
+            <td><input type="number" id="qty1" value=""></td>
+            <td><span id="result1">0</span></td>
+        </tr>
+        <tr>
+            <td><input placeholder="Nom" type="text"></td>
+            <td><input type="number" id="price2" value=""></td>
+            <td><input type="number" id="qty2" value=""></td>
+            <td><span id="result2">0</span></td>
+        </tr>
+        <tr>
+            <td><input placeholder="Nom" type="text"></td>
+            <td><input type="number" id="price3" value=""></td>
+            <td><input type="number" id="qty3" value=""></td>
+            <td><span id="result3">0</span></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total :</td>
+            <td><span id="total">0</span></td>
+        </tr>
+    </table>
+    <button onclick="calculateTotal()">Résultat</button>
+    <button onclick="resetForm()">Réinitialiser</button>
+
+    <li> <a href="../sommaire1.html">Retour aux TPs</a> </li>
+
+</body>
+</html>

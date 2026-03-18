@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: lawngreen;
+}
+
+.groupe{
+    border-radius: 200px;
+
+}
+h2{
+     color: aquamarine;
+}
+body{
+    background-image: linear-gradient(to right, rgba(17, 0, 255, 0.212) , rgba(179, 255, 0, 0.384));
+}

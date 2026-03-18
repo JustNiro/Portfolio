@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à notre évènement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #729cb6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-button {
+            background-color: #324673;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 5px; /* Ajout d'espacement autour des boutons */
+        }
+
+        .animated-button:hover {
+            background-color: #41cdd1; /* Couleur d'arrière-plan lors du survol */
+            transform: scale(1.1); /* Effet de zoom au survol */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Bienvenue Dans TP 4</h1>
+    </header>
+
+    <main>
+        <nav>
+            <a href="Exercice1.html">
+                <button class="animated-button">Exercice 1</button>
+            </a>
+            <br>
+            <br>
+            <a href="Exercice2.html">
+                <button class="animated-button"> Exercice 2</button>
+            </a>
+            <br>
+            <br>
+            <a href="../sommaire1.html">
+                <button class="animated-button"> Retour aux TPs</button>
+            </a>
+        </nav>
+    </main>
+
+</body>
+</html>
