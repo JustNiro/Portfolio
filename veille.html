@@ -13,82 +13,112 @@ box-sizing:border-box;
 }
 
 body{
-font-family: Arial, sans-serif;
-max-width:900px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width:1000px;
 margin:auto;
-padding:30px;
-background:#f4f6f8;
-line-height:1.7;
+padding:40px 20px;
+background:#eef2f7;
+line-height:1.8;
+color:#1f2937;
 }
 
+/* TITRE */
 h1{
 text-align:center;
-margin-bottom:40px;
-color:#111827;
+margin-bottom:50px;
+color:#0f172a;
+font-size:32px;
+letter-spacing:1px;
 }
 
+/* NAVIGATION */
 nav{
-background:white;
-padding:15px;
-border-radius:8px;
-margin-bottom:30px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+background:#0f172a;
+padding:18px;
+border-radius:12px;
+margin-bottom:40px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
 }
 
 nav ul{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:30px;
 list-style:none;
 flex-wrap:wrap;
 }
 
 nav a{
 text-decoration:none;
-font-weight:bold;
-color:#2563eb;
+font-weight:600;
+color:#ffffff;
+transition:0.3s ease;
 }
 
 nav a:hover{
-color:black;
+color:#22c55e;
 }
 
+/* SECTIONS */
 section{
 background:white;
-padding:25px;
-margin-bottom:25px;
-border-radius:8px;
-box-shadow:0 3px 8px rgba(0,0,0,0.05);
+padding:30px;
+margin-bottom:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+transition:0.3s ease;
+}
+
+section:hover{
+transform:translateY(-3px);
 }
 
 h2{
-color:#2563eb;
-margin-bottom:10px;
+color:#0f172a;
+margin-bottom:15px;
+border-left:5px solid #22c55e;
+padding-left:12px;
+font-size:22px;
 }
 
 ul{
-margin-left:20px;
+margin-left:25px;
+margin-top:10px;
 }
 
+li{
+margin-bottom:8px;
+}
+
+/* LIENS */
 a{
 color:#2563eb;
+font-weight:500;
 }
 
+a:hover{
+color:#22c55e;
+}
+
+/* BOUTON */
 .btn-container{
 text-align:center;
-margin-top:30px;
+margin-top:40px;
 }
 
 .btn{
-background:#2563eb;
+background:#0f172a;
 color:white;
-padding:10px 20px;
-border-radius:8px;
+padding:12px 28px;
+border-radius:30px;
 text-decoration:none;
+font-weight:600;
+transition:0.3s ease;
 }
 
 .btn:hover{
-background:black;
+background:#22c55e;
+color:white;
 }
 </style>
 </head>
@@ -104,6 +134,7 @@ background:black;
 <li><a href="#alternatives">Alternatives</a></li>
 <li><a href="#recherche">Mes recherches</a></li>
 <li><a href="#nouveautes">Nouveautés</a></li>
+<li><a href="#synthese">Synthèse</a></li>
 </ul>
 </nav>
 
@@ -121,14 +152,48 @@ notamment pour le développement de sites web et les solutions numériques en en
 <!-- SUJET -->
 <section id="sujet">
 <h2>Mon sujet de veille</h2>
+
 <p>
-Mon sujet de veille est : 
+Mon sujet de veille est :
 <strong>Les alternatives offertes aux entreprises par la création de site web</strong>.
 </p>
+
 <p>
-L’objectif est de comprendre les différentes solutions offertes aux entreprises pour 
-être présentes en ligne, améliorer leur visibilité et proposer des services numériques adaptés.
+La création d’un site web correspond au processus de conception, de développement
+et de mise en ligne d’un site sur Internet.<br><br>
+
+Elle comprend plusieurs étapes comme la conception de la structure du site,
+la création du design, le développement des fonctionnalités et la mise en ligne
+sur un serveur pour qu’il soit accessible aux utilisateurs.
 </p>
+
+<p>
+Pour créer un site web, plusieurs technologies et outils peuvent être utilisés,
+comme les langages HTML, CSS et JavaScript pour l’interface utilisateur,
+ainsi que des langages côté serveur comme PHP.<br><br>
+
+Il existe également des outils comme les CMS (Content Management System)
+ou des plateformes SaaS qui permettent de créer et gérer des sites plus facilement.
+</p>
+
+<p>
+Ce sujet consiste à analyser les différentes solutions permettant aux entreprises
+de créer une présence en ligne.<br><br>
+
+Aujourd’hui, une entreprise peut choisir plusieurs approches pour développer
+son site web : utiliser un CMS, développer un site sur mesure, ou utiliser
+des plateformes SaaS.
+</p>
+
+<p>
+Chaque solution présente des avantages et des limites selon les besoins de
+l’entreprise, son budget, son niveau de personnalisation ou encore les
+compétences techniques disponibles.<br><br>
+
+L’objectif de cette veille est donc de comparer ces différentes alternatives
+afin de comprendre quelles solutions sont les plus adaptées aux entreprises.
+</p>
+
 </section>
 
 <!-- ALTERNATIVES -->
@@ -181,8 +246,46 @@ Cela m’a permis de suivre régulièrement les nouveautés et de mieux comprend
 </ul>
 </section>
 
+<!-- SYNTHESE -->
+<section id="synthese">
+<h2>Synthèse de ma veille technologique</h2>
+
+<p>
+Ma veille technologique m’a permis de comprendre les différentes solutions 
+offertes aux entreprises pour créer un site web et développer leur présence en ligne.
+</p>
+
+<p>
+J’ai découvert qu’il existe plusieurs alternatives selon les besoins :
+</p>
+
+<ul>
+<li>Les CMS comme WordPress permettent de créer rapidement un site.</li>
+<li>Le développement sur mesure offre plus de personnalisation.</li>
+<li>Les solutions SaaS sont simples à utiliser et rapides à mettre en place.</li>
+<li>Les Progressive Web Apps permettent d’avoir des sites modernes proches des applications.</li>
+</ul>
+
+<p>
+J’ai également constaté que les entreprises utilisent de plus en plus :
+</p>
+
+<ul>
+<li>Le cloud pour l’hébergement</li>
+<li>Les API pour connecter les services</li>
+<li>Le référencement SEO pour être visible</li>
+<li>Les frameworks modernes comme React ou Laravel</li>
+</ul>
+
+<p>
+Cette veille m’a permis d’améliorer mes connaissances en développement web 
+et de mieux comprendre les technologies utilisées dans le monde professionnel.
+</p>
+
+</section>
+
 <div class="btn-container">
-<a href="index.html" class="btn">Retour portfolio</a>
+<a href="index.html" class="btn">Retour Portfolio</a>
 </div>
 
 </body>
